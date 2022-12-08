@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    
 }
 
 h3{
@@ -14,12 +16,15 @@ h2{
     font-size: 2rem;
     padding: 2rem;
     
+    
 }
  span{
     animation:blink 1s linear infinite ;
     font-weight:normal;
     font-family: 'Noto Sans Mono', monospace; 
 } 
+
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
 
 @keyframes blink{
@@ -28,24 +33,24 @@ h2{
 
 #time{
     height: 200px;
-   
-    
 }
-
+#time:hover{
+    height: 250px;
+    transition: 1050ms;
+    transform: rotate(360deg);
+}
 .clouds-top{
     position:absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
-
 .clouds-bottom{
     position:absolute;
     right: 0;
     bottom: 0;
     width: 100%;
 }
-
 .getting-rich{
     min-height: 100vh;
     display: flex;
@@ -53,7 +58,6 @@ h2{
     flex-direction: column;
     justify-content: center ;
 }
-
 .countdown{
     display: flex;
     justify-content: space-between;
@@ -61,15 +65,12 @@ h2{
     text-align: center;
 }
 
-.subtitles{
-    font-weight:normal;
-}
 .day,.hour,.minute,.second{
-    font-size: 1.7rem;
+    font-size: 3.7rem;
+    font-family: 'Exo', sans-serif;
+    font-weight: lighter;
+      
 }
 
-#time:hover{
-    height: 250px;
-    transition: 1050ms;
-    transform: rotate(360deg);
-}
+
+
